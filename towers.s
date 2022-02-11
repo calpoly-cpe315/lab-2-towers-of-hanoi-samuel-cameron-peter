@@ -19,8 +19,6 @@ startstring:
     .global	towers
 towers:
    /* Save calllee-saved registers to stack */
-   # 16-23
-   # 24-30
    stp    x19, x20, [sp, -16]!
    stp    x21, x22, [sp, -16]!
    stp    x23, x24, [sp, -16]!
@@ -114,16 +112,6 @@ main:
       ldr    w0, [x29, 28] /* numDisks */
       mov    x1, #1 /* Start */
       mov    x2, #3 /* Goal */
-	  mov x19, #19
-	  mov x20, #20
-	  mov x21, #21
-	  mov x22, #22
-	  mov x23, #23
-	  mov x24, #24
-	  mov x25, #25
-	  mov x26, #26
-	  mov x27, #27
-	  mov x28, #28
       bl     towers
       mov    w4, w0
       ldr    w0, printdata + 8
