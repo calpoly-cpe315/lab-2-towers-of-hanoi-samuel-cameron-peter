@@ -2,6 +2,11 @@
 Towers of Hanoi
 
 Add your name and project status here.
+Peter Edmonds
+Sam Lee
+Cameron Hardy
+
+Status: Complete
 
 The ``towers.s`` file is what you will modifiy. There are comments
 to guide your implementation.
